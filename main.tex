@@ -32,6 +32,7 @@
 
 \usepackage{graphicx}
 \usepackage{bm}
+\usepackage{xcolor}
 
 \begin{document}
 
@@ -123,10 +124,22 @@ While not shown in the schematics, the experimental device is also encased in th
 
 \subsection{Data measurement and reduction\label{sec:ptv}}
 
-As previously mentioned, processing of the obtained images to calculate the velocity fields is conduced via a particle tracking velocimetry (PTV) code developed in-house. Although the details of the algorithm are out of the scope of the current document, the code is built as a collection of previously established methods. For the detection of tracer particles from the images , we employ a variation of the Iterative Particle Reconstruction (IPR) method, which is commonly employed for  volumetric particle tracking as part of the Shake-the-Box method (Jahn et al. 2021). The tracking of detected particle positions between the video frames is carried out by a variation of the Polar Coordinate-System Similarity (PCSS) method (Schindler, 2010).
+As previously mentioned, processing of the obtained images to calculate the velocity fields is conduced via a particle tracking velocimetry (PTV) code developed in-house. Although the details of the algorithm are out of the scope of the current document, the code is built as a collection of previously established methods. For the detection of tracer particles from the images, we employ a variation of the Iterative Particle Reconstruction (IPR) method, which is commonly employed for  volumetric particle tracking as part of the Shake-the-Box method~\cite{ipr_jahn2021}. The tracking of detected particle positions between the video frames is carried out by a variation of the Polar Coordinate-System Similarity (PCSS) method~\cite{PCSSimproved}.
+
+Before the calculation of the final velocity vectors through finite differencing, the trajectories are filtered according to a Wiener Filter~\cite{wiener1949extrapolation} which is calculated from the spectra of position of the obtained trajectories. The filtering is done in order to avoid the effect of the noise floor in the calculation of the velocities. (need to revisit this) (also need to mention the interpolation that is done before the spatial average) \textcolor{red}{also supplement this with the explanation of the uncertainty calculation and all}.
 
 \subsection{Surfactant solutions}
 
+
+The surfactant used in the current study was the cationic surfactant cetrimonium chloride (CTAC), with the addition of sodium salicylate on a molar ratio of approximately 4:1 to provide counterions. The solution is prepared by mixing the adequate amounts of surfactant and salt with tap water and then agitating in a magnetic stirrer over a period of at least 12 hours, after which the resulting solution is added to the experimental device.  For simplicity, the surfactant and salt solution are hereinafter denominated simply as the CTAC solution, with the solution concentration corresponding exclusively to the concentration of the surfactant counterpart.
+
+For the analysis of the effect of solution concentration on the results, three CTAC solutions of concentrations of 33 ppm, 50 ppm, and 100 ppm were  prepared. As previously mentioned, rheological measurements of such dilute solutions have historically yielded diverging results~\cite{kawaguchi2003rheological,zhang_effects_2008}, meaning that to the best of the author's knowledge, there is no precise measurement of the properties such as the relaxation time of micellar structures under these conditions. 
+
+Moreover, the molar ratio of 4:1 chosen for the current study differs from that of the aforementioned measurements, as well as that of drag reduction studies~\cite{li_experimental_2008}. Although numerical studies have reported that such high molar ratios can lead to the formation of branched structures and loss of viscoelasticity~\cite{wang_study_2017}, such claims have been made for solutions of much higher concentrations. In the experience of the authors, this effect is not as pronounced in the case of dilute solutions, and the use of a high molar ratio has been chosen to favor the formation of longer micellar structures.
+
+In spite of these divergences, it can be expected from the aforementioned studies that this relaxation time should be in the order of $10^{-1}$ seconds. Since the relaxation time cannot be precisely known beforehand or independently controlled over a wide range, a sweep over the Weissenberg \textcolor{red}{you need to define what is the weissenberg number bro} number is instead achieved by changing the Reynolds number of the generated turbulence. For each of the prepared solutions, the rotation rate of the blades is changed $2^{-3}$ to $2^4$ Hz in powers of two. Exclusively for the 100 ppm solution \textcolor{red}{say how the rotation rate was reduced further}. Although it is debatable whether the flow generated in the case of the lower rotation rates can be denominated turbulent, it remains chaotic and unsteady, so such cases are still useful in the determination of the effect of surfactant addition on such unsteady but low Reynolds number types of flows. 
+
+The next section describes briefly the characterization of the turbulence generated in the current experimental device for the case of Newtonian fuid.
 
 \section{Turbulence Characterization\label{sec:Turbchar}}
 
