@@ -139,9 +139,36 @@ Moreover, the molar ratio of 4:1 chosen for the current study differs from that 
 
 In spite of these divergences, it can be expected from the aforementioned studies that this relaxation time should be in the order of $10^{-1}$ seconds. Since the relaxation time cannot be precisely known beforehand or independently controlled over a wide range, a sweep over the Weissenberg \textcolor{red}{you need to define what is the weissenberg number bro} number is instead achieved by changing the Reynolds number of the generated turbulence. For each of the prepared solutions, the rotation rate of the blades is changed $2^{-3}$ to $2^4$ Hz in powers of two. Exclusively for the 100 ppm solution \textcolor{red}{say how the rotation rate was reduced further}. Although it is debatable whether the flow generated in the case of the lower rotation rates can be denominated turbulent, it remains chaotic and unsteady, so such cases are still useful in the determination of the effect of surfactant addition on such unsteady but low Reynolds number types of flows. 
 
-The next section describes briefly the characterization of the turbulence generated in the current experimental device for the case of Newtonian fuid.
+The next section describes briefly the characterization of the turbulence generated in the current experimental device for the case of Newtonian fluid.
 
 \section{Turbulence Characterization\label{sec:Turbchar}}
+
+Considering the unique nature of the current experimental apparatus, we conduct a characterization of the turbulence generated in the case of Newtonian flow as a function of the rotation rate of the blades. Although the generated turbulence is anisotropic, turbulent statistics become approximately homogeneous in the vicinity of the stagnation point of the mean flow in the center of the experiment. Owing to this, the statistics are computed as spatiotemporal averages over the duration of the experiments. Figure~\ref{fig:turbchar_uvprime} displays the velocity fluctuation RMS as a function of the blade rotation speed, demonstrating that there ins an approximately linear trend, with the ratio between the two components remaining somewhat constant as well. Note that the turbulent intensity is more pronounced in the horizontal direction, consistent with the primary forcing direction of the blades.
+
+\begin{figure}
+    \includegraphics[width=0.6\columnwidth]{Images/uvprime_plot.png}
+    \caption{Spatially averaged velocity fluctuation RMS in the bulk as a function of rotation rate of the agitator blades..}
+    \label{fig:turbchar_uvprime}
+\end{figure}
+
+Although direct measurement of the dissipation range is not feasible under current experimental conditions, the turbulent dissipation can be estimated through the third-order structure function, as shown in figure~\ref{fig:turbchar_thirdordervsf}. Note that although the generated turbulence is anisotropic, the results of figure~\ref{fig:turbchar_thirdordervsf} indicate that the dissipation rate is approximately independent of the measurement direction, which helps to validate the obtained results \textcolor{red}{is this correct?}. In all the plots, the increase in the value of the structure function as the separation distance reaches the smallest values is caused by the finite depth-of-correlation and the nature of planar imaging, as well as the fact that no interpolation of the instantaneous velocity fields is used for the calculation of these statistics.
+
+For the cases of high rotation rate, the appearance of a horizontal region indicates that an inertial range is well-defined, and the dissipation rate can be taken as the average across this region. For the lower rotation rates, the Reynolds number is too low for the appearance of a defined inertial range, and the extraction of a representative value of dissipation is more difficult. For consistency between the cases, we consider the average value of the normalized third-order structure function between the separations of $r=3$ mm and $r=20$ mm as the dissipation value. These representative values are represented as the dotted lines of figure~\ref{fig:turbchar_thirdordervsf}.
+
+\begin{figure}
+    \includegraphics[width=0.6\columnwidth]{Images/thirdordervsf.png}
+    \caption{Normalized third-order structure function for different rotation rates. Darker lines represent a higher rotation rate.}
+    \label{fig:turbchar_thirdordervsf}
+\end{figure}
+
+From these results, we can then obtain the approximate Kolmogorov lenghtscale and timescale for each of the cases, as shown in figure~\ref{fig:turbchar_etatau}. From these results, the estimated Kolmogorov lenghtscale provides us with an additional clue as to why it is not possible to directly measure the dissipation range, considering that these scales become smaller than the depth-of-correlation of the current imaging system for most rotation rates. Additionally, wide range of the estimated timescales indicate that a wide range of Weissemberg numbers should be obtained regardless of the fact that the relaxation time of the surfactant solutions is not precisely known.
+
+\begin{figure}
+    \includegraphics[width=0.45\columnwidth]{Images/eta_plot.png}
+    \includegraphics[width=0.45\columnwidth]{Images/tau_plot.png}
+    \caption{Kolmogorov lenghtscale and timescale as a function of rotation rate of the agitator blades.}
+    \label{fig:turbchar_etatau}
+\end{figure}
 
 \section{Results\label{sec:Res}}
 
