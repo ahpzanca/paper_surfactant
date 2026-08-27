@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{13}%
+\begin{thebibliography}{14}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -88,4 +88,7 @@
 \bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2017)\citenamefont {Wang}, \citenamefont {Pei}, \citenamefont {Wang}, \citenamefont {Yan}, \citenamefont {Sun},\ and\ \citenamefont {Zhang}}]{wang_study_2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Wang}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Pei}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Wang}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Yan}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Sun}},\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zhang}},\ }\bibfield  {title} {\bibinfo {title} {Study on the transformation from linear to branched wormlike micelles: {An} insight from molecular dynamics simulation},\ }\href {https://doi.org/10.1016/j.jcis.2017.01.057} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Colloid and Interface Science}\ }\textbf {\bibinfo {volume} {494}},\ \bibinfo {pages} {47} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Motozawa}\ \emph {et~al.}(2011)\citenamefont {Motozawa}, \citenamefont {Watanabe}, \citenamefont {Gu},\ and\ \citenamefont {Kawaguchi}}]{motozawa_experimental_2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Motozawa}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Watanabe}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Gu}},\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kawaguchi}},\ }\bibfield  {title} {\bibinfo {title} {Experimental {Investigation} on {Zonal} {Structure} in {Drag}-{Reducing} {Channel} {Flow} with {Surfactant} {Additives}},\ }\href {https://doi.org/10.1155/2011/120438} {\bibfield  {journal} {\bibinfo  {journal} {Advances in Mechanical Engineering}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {120438} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \end{thebibliography}%
