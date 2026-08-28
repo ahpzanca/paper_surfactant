@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{16}%
+\begin{thebibliography}{21}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -64,6 +64,15 @@
 \bibitem [{\citenamefont {Fukushima}\ \emph {et~al.}(2022)\citenamefont {Fukushima}, \citenamefont {Kishi}, \citenamefont {Suzuki},\ and\ \citenamefont {Hidema}}]{fukushima2022jfm}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Fukushima}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Kishi}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Suzuki}},\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Hidema}},\ }\bibfield  {title} {\bibinfo {title} {Modification of turbulence caused by cationic surfactant wormlike micellar structures in two-dimensional turbulent flow},\ }\href {https://doi.org/10.1017/jfm.2021.1058} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Fluid Mechanics}\ }\textbf {\bibinfo {volume} {933}},\ \bibinfo {pages} {A9} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lumley}(1973)}]{lumley1973}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Lumley}},\ }\bibfield  {title} {\bibinfo {title} {Drag reduction in turbulent flow by polymer additives},\ }\href {https://doi.org/10.1002/pol.1973.230070104} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Polymer Science: Macromolecular Reviews}\ }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {263} (\bibinfo {year} {1973})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tabor}\ and\ \citenamefont {de~Gennes}(1986)}]{tabor_degennes1986}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Tabor}}\ and\ \bibinfo {author} {\bibfnamefont {P.~G.}\ \bibnamefont {de~Gennes}},\ }\bibfield  {title} {\bibinfo {title} {A cascade theory of drag reduction},\ }\href {https://doi.org/10.1209/0295-5075/2/7/005} {\bibfield  {journal} {\bibinfo  {journal} {Europhysics Letters}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {519} (\bibinfo {year} {1986})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Horimoto}\ and\ \citenamefont {Goto}(2017)}]{horimoto_goto_2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Horimoto}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Goto}},\ }\bibfield  {title} {\bibinfo {title} {Sustaining mechanism of small-scale turbulent eddies in a precessing sphere},\ }\href {https://doi.org/10.1103/PhysRevFluids.2.114603} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Fluids}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {114603} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Kawaguchi}\ \emph {et~al.}(2003)\citenamefont {Kawaguchi}, \citenamefont {Wei}, \citenamefont {Yu},\ and\ \citenamefont {Feng}}]{kawaguchi2003rheological}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kawaguchi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Wei}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Yu}},\ and\ \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Feng}},\ }\bibfield  {title} {\bibinfo {title} {Rheological characterization of drag-reducing cationic surfactant solution: Shear and elongational viscosities of dilute solutions},\ }in\ \href {https://doi.org/10.1115/FEDSM2003-45653} {\emph {\bibinfo {booktitle} {Volume 1: Fora, Parts A, B, C, and D}}},\ \bibinfo {series and number} {Fluids Engineering Division Summer Meeting}\ (\bibinfo {year} {2003})\ pp.\ \bibinfo {pages} {721--728}\BibitemShut {NoStop}%
@@ -85,6 +94,12 @@
 \bibitem [{\citenamefont {Wiener}(1949)}]{wiener1949extrapolation}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Wiener}},\ }\href@noop {} {\emph {\bibinfo {title} {Extrapolation, Interpolation, and Smoothing of Stationary Time Series}}}\ (\bibinfo  {publisher} {MIT Press},\ \bibinfo {address} {Cambridge, MA},\ \bibinfo {year} {1949})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Agüí}\ and\ \citenamefont {Jiménez}(1987)}]{agui_performance_1987}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont {Agüí}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Jiménez}},\ }\bibfield  {title} {\bibinfo {title} {On the performance of particle tracking},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Fluid Mechanics}\ }\textbf {\bibinfo {volume} {185}},\ \bibinfo {pages} {447} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Politis}(2001)}]{Politis2001SBB}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~N.}\ \bibnamefont {Politis}},\ }\bibfield  {title} {\bibinfo {title} {Resampling time series with seasonal components},\ }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Frontiers in Data Mining and Bioinformatics: Proceedings of the 33rd Symposium on the Interface of Computing Science and Statistics}}}\ (\bibinfo {address} {Orange County, California},\ \bibinfo {year} {2001})\ pp.\ \bibinfo {pages} {619--621}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2017)\citenamefont {Wang}, \citenamefont {Pei}, \citenamefont {Wang}, \citenamefont {Yan}, \citenamefont {Sun},\ and\ \citenamefont {Zhang}}]{wang_study_2017}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Wang}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Pei}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Wang}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Yan}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Sun}},\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Zhang}},\ }\bibfield  {title} {\bibinfo {title} {Study on the transformation from linear to branched wormlike micelles: {An} insight from molecular dynamics simulation},\ }\href {https://doi.org/10.1016/j.jcis.2017.01.057} {\bibfield  {journal} {\bibinfo  {journal} {Journal of Colloid and Interface Science}\ }\textbf {\bibinfo {volume} {494}},\ \bibinfo {pages} {47} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
