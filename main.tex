@@ -20,7 +20,7 @@
 % Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
 %  Add 'draft' option to mark overfull boxes with black boxes
 %  Add 'showkeys' option to make keywords appear
-\documentclass[aps,prf,groupedaddress,showkeys]{revtex4-2}
+\documentclass[aps,prfluids,groupedaddress,showkeys,11pt,tightenlines]{revtex4-2}
 %\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
 %\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
 
@@ -133,6 +133,11 @@ In the present study, we employ an experimental device designed to produce Taylo
     \caption{\label{fig:schematic_1}Schematic (a) of the experimental device and zoomed-in views showing the laser sheet and camera orientations for the imaging of (b) the bulk and (c) the vicinity of the blades in the horizontal plane.}
 \end{figure}
 
+\begin{figure}[h]
+    \includegraphics[width=0.3\columnwidth]{Images/topvis_scheme.png}
+    \caption{\label{fig:topvis_scheme}Schematic of the viewing area in the horizontal plane with respect to the position of the blades, as well as laser sheet and camera directions during bulk imaging.}
+\end{figure}
+
 As shown in the schematics of figure~\ref{fig:schematic_1}, the rotors themselves are shaped as blades with rectangular cross-section to achieve the inertial driving of the turbulence. Additionally, the rotation direction is such that mean stretching of the flow happens in the out-of-plane component of the camera image (when imaging the bulk region in the vertical plane), and is accompanied by the formation of secondary vortices as shown in previous numerical studies~\cite{goto2017hierarchy}. For simplicity, the carved rotors will also hereinafter be referred to as blades.
 
 The water tank has a horizontal cross-section of $32 \times 32$~cm and a height of approximately $35$~cm, allowing it to hold $30$~L of tap water. The distance between the axes of adjacent blades is $60$~mm, and the blade diameter is $36$~mm. The laser is a Kanomax CW532-1WM continuous-wave Nd:YAG laser operating at $532$~nm. It is equipped with a cylindrical plano-concave lens and a spherical plano-convex lens, producing a laser sheet approximately $1$~mm thick in the measurement region. The camera is an IDT XSM-3520 Xstream high-speed camera equipped with a Tokina $50$~mm, $f/2.8$ lens, stopped down to approximately $f/4.0$ for image sharpness. The resulting spatial resolutions are $0.025$~mm/pixel for bulk imaging and $0.037$~mm/pixel for top-down imaging. While not shown in the schematics, the experimental device is also encased in thermal insulation and connected to an air-processor system. By controlling the temperature of the surrounding air, we maintain the water temperature at approximately 26~$^\circ$C over the course of the experiments.
@@ -166,7 +171,7 @@ The next section briefly describes the characterization of the turbulence genera
 Considering the unique nature of the current experimental apparatus, we conduct a characterization of the turbulence generated in the case of Newtonian flow as a function of the rotation rate of the blades. Although the generated turbulence is anisotropic, turbulent statistics become approximately homogeneous in the vicinity of the stagnation point of the mean flow in the center of the experiment. Owing to this, the statistics are computed as spatiotemporal averages over the duration of the experiments. Figure~\ref{fig:turbchar_uvprime} displays the velocity fluctuation RMS as a function of the blade rotation speed, demonstrating that there is an approximately linear trend, with the ratio between the two components remaining somewhat constant as well. This trend is consistent with a simple dimensional argument: since the geometry of the apparatus is fixed, the only velocity scale available to the large, forced eddies is the blade tip speed, $u' \sim \Omega R$, with $R$ a characteristic length of the rotors. Note that the turbulent intensity is more pronounced in the horizontal direction, consistent with the primary forcing direction of the blades.
 
 \begin{figure}[h]
-    \includegraphics[width=0.4\columnwidth]{Images/uvprime_plot.png}
+    \includegraphics[width=0.4\columnwidth]{Images/uvprime_plot_linear.png}
     \caption{\label{fig:turbchar_uvprime}Spatially averaged velocity fluctuation RMS in the bulk as a function of rotation rate of the agitator blades.}
 \end{figure}
 
@@ -175,8 +180,9 @@ Although direct measurement of the dissipation range is not feasible under curre
 For the cases of high rotation rate, the appearance of a horizontal region indicates that an inertial range is well-defined, and the dissipation rate can be taken as the average across this region. For the lower rotation rates, the Reynolds number is too low for the appearance of a defined inertial range, and the extraction of a representative value of dissipation is more difficult. For consistency between the cases, we consider the average value of the normalized third-order structure function between the separations of $r=3$ mm and $r=20$ mm as the dissipation value. These representative values are represented as the dotted lines of figure~\ref{fig:turbchar_thirdordervsf}.
 
 \begin{figure}[h]
-    \includegraphics[width=0.4\columnwidth]{Images/thirdordervsf.png}
-    \caption{\label{fig:turbchar_thirdordervsf}Normalized third-order structure function for different rotation rates. Darker lines represent a higher rotation rate.}
+    \includegraphics[height=0.3\columnwidth]{Images/thirdordervsf.png}
+    \includegraphics[height=0.3\columnwidth]{Images/epsss.png}
+    \caption{\label{fig:turbchar_thirdordervsf}Normalized third-order structure function for different rotation rates. Darker lines represent a higher rotation rate (a). Dissipation rate as a function of the blade Reynolds number (b).}
 \end{figure}
 
 Combined with the previous scaling argument for $u'$, this measurement of the dissipation rate allows us to estimate its dependence on rotation rate. In fully developed turbulence, the dissipation rate becomes independent of viscosity and is instead set by the rate at which energy is supplied to the large scales, $\varepsilon \sim u'^3/L$, with $L$ a fixed characteristic length of the energy-containing eddies (again set by the geometry of the apparatus). Combined with $u' \sim \Omega R$, this yields the scaling $\varepsilon \sim \Omega^3$. From these results, we can then obtain the approximate Kolmogorov length scale and time scale for each of the cases,
@@ -188,8 +194,9 @@ Combined with the previous scaling argument for $u'$, this measurement of the di
 as shown in figure~\ref{fig:turbchar_etatau}, where the measured power-law trends are consistent with the scaling above. The estimated Kolmogorov length scale provides us with an additional clue as to why it is not possible to directly measure the dissipation range, considering that these scales become smaller than the depth-of-correlation of the current imaging system for most rotation rates. Additionally, figure~\ref{fig:turbchar_etatau} also presents the range of Weissenberg numbers which is obtained for each rotation rate when considering a relaxation time of $\tau_s = 0.1$ s as per the discussion of section~\ref{sec:Surfsol}. The wide range, from $Wi = \mathcal{O}(10^{-2})$ to $Wi = \mathcal{O}(10^{2})$, indicates that the transition between elastically dominated and inertially dominated flow should be observed in all solutions regardless of the uncertainty in the determination of their precise relaxation time.
 
 \begin{figure}[h]
-    \includegraphics[width=0.38\columnwidth]{Images/eta_plot.png}
-    \includegraphics[width=0.5\columnwidth]{Images/tau_plot_boosted.png}
+    \includegraphics[width=0.45\columnwidth]{Images/eta_plot_dub.png}
+    \quad
+    \includegraphics[width=0.48\columnwidth]{Images/tau_plot_boosted.png}
     \caption{\label{fig:turbchar_etatau}Kolmogorov length scale as a function of rotation rate (left). Kolmogorov time scale and estimated Weissenberg numbers (square and circular markers respectively) (right).}
 \end{figure}
 
@@ -222,14 +229,14 @@ From the plot of figure~\ref{fig:meanflow_ratio}, it can be seen that for rotati
 To investigate the cause behind this increase in the mean flow for the lower rotation rates, figure~\ref{fig:meanflow_phases} presents the value of the same spatially averaged horizontal component of the mean velocity, but as a function of the phase of the blade ($\phi$). Similarly to the previously defined quantities, we introduce $U_\phi^{\dagger}(\mathbf{x}, \phi) = \frac{1}{2}\left[ U_\phi(\mathbf{x}, \phi) - U_\phi(\tilde{\mathbf{x}}, \phi) \right]$ corresponding to the symmetry-enforced version of the phase-locked component of the mean flow $U_\phi$. Again, for visual clarity, this quantity is hereinafter simply referred to as $\overline{U_\phi}$ after the spatial averaging over the left side of the observed domain is taken.
 
 \begin{figure}[h]
-    \includegraphics[width=0.7\columnwidth]{Images/phasemeans.png}
+    \includegraphics[width=0.7\columnwidth]{Images/phasemeans_rev.png}
     \caption{\label{fig:meanflow_phases}Spatially averaged horizontal mean flow component as a function of blade phase for each of the tested cases. Positive value refers to inward motion (towards the stagnation point), while a negative value indicates flow reversal.}
 \end{figure}
 
 From these plots, it is possible to see that the overall dependence of the mean flow on the phase of the blade gets amplified as either the concentration of the solution is increased or the rotation rate is decreased, possibly leading to a reversal of flow direction as well. Looking in more detail, from the plots of the 50 and 100 ppm solutions, it can be seen that as the rotation rate is decreased from a high value, the oscillatory behavior is asymmetric, in the sense that we see a strong increase in the mean flow intensity for most of the cycle, and only a small decrease during a very narrow range. This behavior reaches an extreme around the rotation rate of $2^{-2}$ or $2^{-3}$ Hz (depending on solution concentration) where the intensification of the mean flow reaches a peak. To aid the analysis, figure~\ref{fig:meanflow_amplitude} presents the normalized amplitude of the curves for each of the cases.
 
 \begin{figure}[h]
-    \includegraphics[width=0.4\columnwidth]{Images/mean_amplitude.png}
+    \includegraphics[width=0.4\columnwidth]{Images/mean_amplitude_rev.png}
     \caption{\label{fig:meanflow_amplitude}Normalized amplitude of the spatially averaged, phase-locked horizontal component of the mean flow as a function of rotation rate.}
 \end{figure}
 
@@ -240,11 +247,6 @@ Returning to the plots of figure~\ref{fig:meanflow_phases} once again, it can be
 The behavior observed in figures~\ref{fig:meanflow_phases}~and~\ref{fig:meanflow_amplitude} is indicative of a resonance phenomenon between the flow forcing and large structures which have a relaxation time much slower than the typical relaxation time of the micelles, which, as previously described, is of the order of $0.1$ s. Considering that the current resonant peaks appear at a rotation rate of approximately $0.1$ Hz (and therefore a forcing frequency of $0.2$ Hz due to the geometry of the blades), it can be expected that the structures at play in this case also have a relaxation time of the order of $5$ s. Moreover, for them to interact with the blades and produce the observed scale of velocity oscillation, the spatial scale of these structures can also be expected to be of the order of $\mathcal{O}(1 \mathrm{ cm})$, the same as the spacing between the blades.
 
 In order to analyze the movement and behavior of such flow structures in more detail, we can rely on the flow fields measured in the horizontal plane and in the vicinity of the blades. Considering the limited viewing area enforced by the proximity of the blades, and the maximum mirror size that can be fitted between them, the schematic shown in figure~\ref{fig:schematic_1} is slightly modified such that the line of sight of the camera points to the region between two blades, in the orientation at which the motion of ``pushing'' fluid towards the stagnation point is targeted. In preparation for the analysis of the results, figure~\ref{fig:topvis_scheme} shows the relative position of the measured area, displayed as the black square with the velocity vectors. The cross-sections of the blades are drawn as gray rectangles with the rotation direction specified, and the relative positions of the laser sheet and camera viewing direction for the cases of bulk imaging (used for the extraction of the results discussed up to this point) are also shown for reference. In each of the blades, the points defined as leading and trailing edges are also specified as they will be referred to in the analysis of the results. Note that for clarity reasons only a fraction ($15\%$ to $20\%$) of the tracked particles is shown, and the figures are not representative of the actual spatial resolution of the measurements.
-
-\begin{figure}[h]
-    \includegraphics[width=0.6\columnwidth]{Images/topvis_scheme.png}
-    \caption{\label{fig:topvis_scheme}Schematic of the viewing area in the horizontal plane with respect to the position of the blades, as well as laser sheet and camera directions during bulk imaging.}
-\end{figure}
 
 With this schematic in mind, figure~\ref{fig:topvis_all} displays the evolution of the flow field over the course of half a rotation period divided into four snapshots, for the Newtonian and 50 ppm cases at the rotation rate of 0.125 Hz, divided into the top and bottom rows respectively. In both cases, the evolution is displayed from left to right, with the blades initially in the position of largest constriction of the flow. From there, each consecutive snapshot is delayed by a rotation of $45^\circ$. For the Newtonian flow case, in the top row, no particularly noteworthy flow structures are visible, with the highest flow velocity seen in the vicinity of the blades (particularly behind the trailing edge), and a general attenuation of the velocity magnitude towards the bulk region. For the surfactant case in the bottom row, however, more complex flow patterns are observed.
 
